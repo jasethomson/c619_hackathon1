@@ -1,0 +1,116 @@
+body{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+}
+header{
+  width: 100vw;
+  height: 5vh;
+  background-color: lightskyblue;
+  display: flex;
+}
+.pawnSelector{
+  width: 5%;
+  height: 100%;
+}
+#greenPawn{
+  background-color: green;
+}
+#yellowPawn{
+  background-color: yellow;
+}
+#timer{
+  width: 10%;
+  height: 100%;
+  padding: 1vh
+}
+#title{
+  width: 60%;
+  height:100%;
+  text-align: center;
+  font-size: 30px;
+}
+#gameContainer{
+  width: 100vw;
+  height: 95vh;
+  background-color: lightgreen;
+  display: inline-block;
+}
+#gameBoard{
+  margin: auto;
+  width: 90vmin;
+  height: 90vmin;
+  background-color: lightblue;
+}
+.square{
+  width: 33.33%;
+  height: 33.33%;
+  background-color: red;
+  position: relative;
+  float: left;
+}
+.squareContainer{
+  border: 2px solid red;
+  opacity:1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.backOfTile{
+  background-image: url(images/tileBack.png);
+  background-position: center;
+  background-size: cover;
+}
+.pawn{
+  width: 25%;
+  height: 25%;
+  background-color: green;
+  float: left;
+}
+.pawnContainer{
+  border: 1px solid orange;
+  background-color: lightgrey;
+  width: 100%;
+  height: 100%;
+  position: static;
+}
+.toggleDisplay{
+  display: none;
+}
+.youWin {
+  background-color: #fefefe;
+  border: 2px solid black;
+  color: red;
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  left: 38%;
+  top: 30%;
+  font-size: 6vmin;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+.youLose {
+  background-color: #fefefe;
+  border: 2px solid black;
+  color: red;
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  left: 38%;
+  top: 30%;
+  font-size: 6vmin;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+.youLose > .loseReset{
+  margin-top: 1vmin;
+  color: black;
+  font-size: 3vmin;
+}
+.hidden{
+  display: none;
+}

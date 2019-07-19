@@ -1,0 +1,39 @@
+.player{
+  border-radius: 50%;
+  height: 90%;
+  width: 90%;
+  z-index: 5;
+  margin: auto;
+}
+.item {
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-position: center;
+  background-size: cover;
+}
+.redItem1 {
+  background-image: url("./images/redSword.jpg")
+}
+.redItem2 {
+  background-image: url("./images/redSword.jpg")
+}
+.exit {
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-position: center;
+  background-size: cover;
+}
+.redExit {
+  background-image: url("./images/redExit.png")
+}
+.door{
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  margin:auto;
+  background-position: center;
+  background-size: cover;
+  background-color: burlywood;
+}
