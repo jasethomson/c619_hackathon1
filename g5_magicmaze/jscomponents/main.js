@@ -10,21 +10,21 @@ var randomExitX = Math.round(Math.random() * 2);
 var randomExitY = Math.round(Math.random() * 2);
 var randomExitx = Math.round(Math.random() * 3);
 var randomExity = Math.round(Math.random() * 3);
-var tileConfig = {
-  height: 3,
-  width: 3,
-}
-var squareConfig = {
-  height: 4,
-  width: 4
-}
+// var tileConfig = {
+//   height: 3,
+//   width: 3,
+// }
+// var squareConfig = {
+//   height: 4,
+//   width: 4
+// }
 function initializeApp() {
   // $('.backOfTile').removeClass();
 
-  // game = new MakeGame();
+  game = new MakeGame();
 
-  game = new MagicMaze(tileConfig, squareConfig);
-  game.makeGameBoard();
+  // game = new MagicMaze(tileConfig, squareConfig);
+  // game.makeGameBoard();
   // game.makeGameBoard();
   // $('#gameContainer').on('click', clickToUnhideCard);
   if (randomItemBigIndexX == randomItemBigIndexY && randomItemLittleIndexX == randomItemLittleIndexY){
@@ -50,7 +50,7 @@ function initializeApp() {
   var newPlayer1 = new Player("red", 1, 1, "player1", randomItemBigIndexY, randomItemBigIndexX, randomItemLittleIndexY, randomItemLittleIndexX, randomExitY, randomExitX, randomExity, randomExitx);
   var redItem1 = new RedItem1(randomItemBigIndexY, randomItemBigIndexX, randomItemLittleIndexY, randomItemLittleIndexX, 1);
   var redItem2 = new RedItem1(randomItemBigIndexX, randomItemBigIndexY, randomItemLittleIndexX, randomItemLittleIndexY, 2);
-  var redExit = new RedExit(randomExitY, randomExitX, randomExity, randomExitx);
+  // var redExit = new RedExit(randomExitY, randomExitX, randomExity, randomExitx);
 
 
   checkItem();

@@ -8,7 +8,6 @@ class Player {
     this.randomItemBigIndexX = BigX;
     this.randomItemLittleIndexY = LittleY;
     this.randomItemBigIndexY = BigY;
-    // console.log(this.randomItemBigIndexY, this.randomItemBigIndexX, this.randomItemLittleIndexY, this.randomItemLittleIndexX)
     this.randomExitX = ExitX;
     this.randomExitY = ExitY;
     this.randomExitx = Exitx;
@@ -266,13 +265,14 @@ startTimer() {
 }
 class RedItem1 {
   constructor(BigY, BigX, LittleY, LittleX, redItemNum) {
-    this.item = $(game.boardArray[BigY][BigX][LittleY][LittleX].domElement.contents);
+    this.item = $(MagicMaze.game.boardArray[BigY][BigX][LittleY][LittleX].domElement.contents);
     this.item.addClass("item zdex redItem"+redItemNum);
   }
 }
 class RedExit {
   constructor(BigY, BigX, LittleY, LittleX) {
-    this.exit = $(game.boardArray[BigY][BigX][LittleY][LittleX].domElement.contents);
+    console.log("this is the make game array " + MagicMaze.prototype);
+    this.exit = $(this.MagicMaze.boardArray[BigY][BigX][LittleY][LittleX].domElement.contents);
     this.exit.addClass("exit zdex redExit");
   }
 }

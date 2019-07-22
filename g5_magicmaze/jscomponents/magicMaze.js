@@ -22,7 +22,7 @@ class MagicMaze {
         this.boardArray[this.row][this.col] = tile;
         this.tileDomObject = tile.render();
         this.gameBoardDom.append(this.tileDomObject);
-        $('.squareContainer').addClass('backOfTile')
+        // $('.squareContainer').addClass('backOfTile')
         this.makePawnSquares();
       }
     }

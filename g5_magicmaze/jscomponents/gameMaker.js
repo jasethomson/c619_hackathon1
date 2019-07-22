@@ -5,20 +5,21 @@ class MakeGame {
     // this.randomItemBigIndexX = Math.round(Math.random() * 2);
     // this.randomItemLittleIndexY = Math.round(Math.random() * 3);
     // this.randomItemBigIndexY = Math.round(Math.random() * 2);
-    // this.randomExitX = Math.round(Math.random() * 2);
-    // this.randomExitY = Math.round(Math.random() * 2);
-    // this.randomExitx = Math.round(Math.random() * 3);
-    // this.randomExity = Math.round(Math.random() * 3);
-    // this.tileConfig = {
-    //   height: 3,
-    //   width: 3,
-    // }
-    // this.squareConfig = {
-    //   height: 4,
-    //   width: 4
-    // }
-    // game = new MagicMaze(this.tileConfig, this.squareConfig);
-    // game.makeGameBoard();
+    this.randomExitX = Math.round(Math.random() * 2);
+    this.randomExitY = Math.round(Math.random() * 2);
+    this.randomExitx = Math.round(Math.random() * 3);
+    this.randomExity = Math.round(Math.random() * 3);
+    this.tileConfig = {
+      height: 3,
+      width: 3,
+    }
+    this.squareConfig = {
+      height: 4,
+      width: 4
+    }
+    this.game = new MagicMaze(this.tileConfig, this.squareConfig);
+    this.game.makeGameBoard();
+    // $('.backOfTile').removeClass();
     // if (this.randomItemBigIndexX == this.randomItemBigIndexY && this.randomItemLittleIndexX == this.randomItemLittleIndexY) {
     //   this.randomItemBigIndexX = Math.round(Math.random() * 2);
     //   this.randomItemLittleIndexX = Math.round(Math.random() * 3);
@@ -43,7 +44,7 @@ class MakeGame {
     // var newPlayer1 = new Player("red", 1, 1, "player1");
     // var redItem1 = new RedItem1(this.randomItemBigIndexY, this.randomItemBigIndexX, this.randomItemLittleIndexY, this.randomItemLittleIndexX, 1);
     // var redItem2 = new RedItem1(this.randomItemBigIndexX, this.randomItemBigIndexY, this.randomItemLittleIndexX, this.randomItemLittleIndexY, 2);
-    // var redExit = new RedExit(this.randomExitY, this.randomExitX, this.randomExity, this.randomExitx);
+    this.redExit = new RedExit(this.randomExitY, this.randomExitX, this.randomExity, this.randomExitx);
     // window.addEventListener('keydown', this.movementAll);
     // $('#timerButton').on("click", this.startTimer);
   }
