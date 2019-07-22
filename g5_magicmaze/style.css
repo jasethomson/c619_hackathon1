@@ -3,6 +3,7 @@ body{
   height: 100vh;
   width: 100vw;
   display: block;
+  position: fixed;
 }
 header{
   width: 100vw;
@@ -14,16 +15,22 @@ header{
   width: 5%;
   height: 100%;
 }
-#greenPawn{
-  background-color: green;
+.itemContainer {
+  border: 1px solid black;
+  height: 95%;
+  width: 3%;
+  margin-left: 1%;
+  background-position: center;
+  background-size: cover;
 }
-#yellowPawn{
-  background-color: yellow;
+.retrieveItem {
+  background-image: url("./images/redSword.jpg")
 }
 #timer{
   width: 10%;
-  height: 100%;
-  padding: 1vh
+  height: 95%;
+  margin-left: 1%;
+  text-align: center;
 }
 #title{
   width: 60%;
@@ -58,7 +65,7 @@ header{
   position: absolute;
 }
 .backOfTile{
-  background-image: url(images/tileBack.png);
+  background-image: url(images/unnamed.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -107,6 +114,11 @@ header{
   padding-top: 10px;
 }
 .youLose > .loseReset{
+  margin-top: 1vmin;
+  color: black;
+  font-size: 3vmin;
+}
+.youWin > .winReset{
   margin-top: 1vmin;
   color: black;
   font-size: 3vmin;

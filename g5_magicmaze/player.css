@@ -1,14 +1,15 @@
+.zdex{
+  z-index: 5;
+}
 .player{
   border-radius: 50%;
   height: 90%;
   width: 90%;
-  z-index: 5;
   margin: auto;
 }
 .item {
   height: 100%;
   width: 100%;
-  z-index: 5;
   background-position: center;
   background-size: cover;
 }
@@ -21,7 +22,6 @@
 .exit {
   height: 100%;
   width: 100%;
-  z-index: 5;
   background-position: center;
   background-size: cover;
 }
@@ -31,9 +31,18 @@
 .door{
   height: 100%;
   width: 100%;
-  z-index: 5;
   margin:auto;
   background-position: center;
   background-size: cover;
   background-color: burlywood;
+}
+.winning{
+  background-image: url("./images/winning1.gif");
+  background-position: center;
+  background-size: cover;
+}
+.losing{
+  background-image: url("./images/losing.gif");
+  background-position: center;
+  background-size: cover;
 }
